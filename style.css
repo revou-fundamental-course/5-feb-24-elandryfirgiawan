@@ -1,0 +1,93 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background-image: url(fotoraja\ 4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h1 {
+    text-align: center;
+}
+p{
+    font-weight: bold;
+    text-align: center;
+}
+.container {
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 400px;
+    box-shadow: 10px 5px 5px #0cd4db;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: rgb(191, 197, 197);
+}
+.wrapper{
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 500px;
+    box-shadow: inset 5px 5px 5px #10e4e4;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+.wrapper {
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 500px;
+    margin: 0 auto;
+    border-radius: 5px;
+    position: relative; 
+}
+
+.wrapper::after {
+    content: '';
+    position: absolute;
+    top: 5px; 
+    left: 5px; 
+    right: 5px; 
+    bottom: 5px; 
+    box-shadow: 0 0 0 5px #2b2020; 
+    border-radius: 5px; 
+    z-index: -1; 
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+input,select {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+select, option{
+    cursor: pointer;
+}
+button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background-color: #fafafa;
+    color: blue;
+    border-radius: 5px;
+    }
+    
+button:hover {
+    border-radius: 5px;
+    box-shadow: #362e2e 2px 2px 2px;
+}
+#suhu-hasil {
+    background-color: #f2f2f2;
+}
+@media screen and (max-width: 600px) {
+    .wrapper {
+        width: 80%;
+    }
+    .container{
+        width: 80%;
+    }
+}
